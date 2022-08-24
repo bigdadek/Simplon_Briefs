@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleButtonAction" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #DEBA9D;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ReadListController">
+   <children>
+      <TableView fx:id="read_table" layoutX="147.0" layoutY="47.0" prefHeight="346.0" prefWidth="450.0" style="-fx-border-color: #977071; -fx-background-color: #f5e8c7;">
+        <columns>
+            <TableColumn fx:id="create_id" prefWidth="31.33331298828125" style="-fx-background-color: #6F4C5B;" text="&lt;3" />
+          <TableColumn fx:id="read_title" prefWidth="111.3333740234375" style="-fx-background-color: #977071;" text="Title" />
+          <TableColumn fx:id="read_date" prefWidth="113.3333740234375" style="-fx-background-color: #977071;" text="DeadLine" />
+            <TableColumn fx:id="read_categ" minWidth="7.33331298828125" prefWidth="93.33331298828125" style="-fx-background-color: #977071;" text="Categorie" />
+            <TableColumn fx:id="read_status" prefWidth="94.66668701171875" style="-fx-background-color: #977071;" text="Stutas" />
+        </columns>
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+      </TableView>
+      <Label layoutX="153.0" layoutY="-2.0" prefHeight="46.0" prefWidth="137.0" text="My Lists :" textFill="#6f4c5b">
+         <font>
+            <Font name="Georgia" size="30.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="141.0" spacing="5.0" style="-fx-background-color: #977071;">
+         <children>
+            <ImageView fitHeight="105.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../KBList.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="30.0" prefWidth="94.0" text="KB List &lt;3" textFill="#482232">
+               <font>
+                  <Font name="Georgia" size="20.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="207.0" prefWidth="141.0">
+               <children>
+                  <Label text="List :" textFill="#f5e8c7">
+                     <font>
+                        <Font name="Serif Regular" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="read_btnCreate" mnemonicParsing="false" prefWidth="70.0" style="-fx-background-color: #6F4C5B;" text="Create" textFill="#f5e8c7">
+                     <font>
+                        <Font name="Georgia" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label textFill="#f5e8c7">
+                     <font>
+                        <Font name="Serif Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label textFill="#f5e8c7">
+                     <font>
+                        <Font name="Serif Regular" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="User :" textFill="#f5e8c7">
+                     <font>
+                        <Font name="Serif Regular" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="read_logOut" mnemonicParsing="false" prefWidth="70.0" style="-fx-background-color: #6F4C5B;" text="Log Out" textFill="#f5e8c7">
+                     <font>
+                        <Font name="Georgia" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Label prefHeight="28.0" prefWidth="117.0" />
+            <Label prefHeight="25.0" prefWidth="117.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"xmlns: th="http://www.thymeleaf.org"
+ xmlns:Layout="http://www.ultraq.net.nz/thyemleaf/layout">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<link rel ="stylesheet" type="text/css" href="/webjars/bootstrap/5.1.3/css/bootstrap.min.css">
+<script src="/webjars/bootstrap/5.1.3/js/bootstrap.bundel.js"> </script>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-light">
+
+  <div class="container-fluid">
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/index}">Home</a></li>
+   	   <li><a class="dropdown-item" th:href="@{/LogIn}">Log Out</a></li>
+       <li><a class="dropdown-item" th:href="@{/NewEmploye}">New Emplye</a></li>
+ <li>
+ <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+</a>
+<span sec:authentication="name"> </span></a>
+    </li>
+    
+    </ul>
+  </div>
+
+</nav>
+
+<section layout:fragment="content1"> 
+
+
+</section>
+
+</body>
+</html>
